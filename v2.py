@@ -2,7 +2,7 @@ import numpy as np
 
 A = [1,5,2,1,4,0]
 n = len(A)
-R = np.ones((n,n), dtype=int)       //[[1 for i in range(n)] for j in range(n)]
+R = np.ones((n,n), dtype=int)       #[[1 for i in range(n)] for j in range(n)]
 nR = n * (n - 1)
 cc = 0
 for i in range(n):

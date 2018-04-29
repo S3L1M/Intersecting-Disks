@@ -1,7 +1,9 @@
+import numpy as np
+
 A = [1,5,2,1,4,0]
 n = len(A)
-R = [[1 for i in range(n)] for j in range(n)]
-nR = n * n - n
+R = np.ones((n,n), dtype=int)       //[[1 for i in range(n)] for j in range(n)]
+nR = n * (n - 1)
 cc = 0
 for i in range(n):
     for j in range(i+A[i]+1, n):
